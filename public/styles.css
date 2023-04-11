@@ -1,0 +1,378 @@
+*{
+  font-family: 'Fredoka', sans-serif;
+margin: auto;
+padding: auto;
+box-sizing: border-box;
+text-decoration: none;
+}
+.home, .about-anime, .footer{
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.home{
+ background-image: url('./bac.jpg');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: white;
+}
+nav{
+  display: flex;
+  width: 100%;
+  max-width: 120rem;
+  position: absolute;
+  margin-block:20px;
+}
+.logo{
+  width: 12rem;
+  height: 4rem;
+  display: inline-flex;
+  margin-left: 8rem;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+}
+ul{
+  left: 45%;
+  display: flex;
+  margin-right: -25rem;
+}
+li{
+  list-style: none;
+  font-size:1.1rem ;
+  text-transform: uppercase;
+  margin-inline: 3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+a{
+  color: white;
+  position: relative;
+}
+li a:visited{
+  color: white;
+}
+li a:after{
+  content:'';
+  background-color: white;
+  height: 3px;
+  width: 0rem;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  position: absolute;
+  border-radius: 20px;
+}
+a:hover::after{
+  width: 3rem;
+}
+.name{
+  font-size: 5rem;
+  text-transform: lowercase;
+  font-weight: medium;
+  font-family: 'Fredericka the Great', cursive;
+  margin-top: -1rem;
+  transition: 1s;
+}
+.name:hover{
+  color: red;
+}
+.descriptive{
+  font-size: 3rem;
+  position: absolute;
+  margin-top: 34rem;
+  margin-left: 30%;
+  width: 36%;
+  text-align: center;
+  }
+h3{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.text{
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+button{
+  width: 20rem;
+  height: 3.3rem;
+  border: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-top: 3rem;
+  color: white;
+  background-color: rgb(243, 81, 108);
+  cursor: pointer;
+  transition: 2s;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
+button a:visited{
+  color: black;
+}
+
+.hero{
+  margin-block: 5rem;
+  background-color:white;
+  padding-block: 3rem;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  
+  .cards {
+    display: flex;
+    width: 200%;
+    animation: slide 20s infinite ease-in-out;
+    
+  }
+  
+  .slider .card {
+    width: 25rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-inline: 2rem;
+  }
+  .card img{
+    height: 100%;
+    width: 100%;
+    top: 0rem;}
+
+    .card .back{
+      position: absolute;
+      color: white;
+      font-size: x-large;
+      width: 100%;
+      height: 100%;
+      padding-block: 5rem;
+      background-color: rgba(0, 0, 0, 0.516);
+      display: none;
+    }
+        .animetext{
+      position: absolute;
+      bottom: 12rem;
+    }
+    .back h5{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      text-align: center;
+      scale: 1.3;
+      }
+      .back h5:hover{
+        color:rgb(243, 81, 108);
+      }
+    .back p{
+      padding-inline: 2rem;
+    }
+    .card:hover .back{
+      display: block;
+    }
+  
+  /*@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }*/
+  @keyframes slides {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .smalltext h3{
+    font-size: 3rem;
+    text-transform:uppercase;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: -1rem;
+    text-align: center;
+    color: #555;
+  }
+  .smalltext h3 span{
+    color: rgba(255, 0, 0, 0.799);
+  }
+  .smalltext p{
+    color: #999;
+    text-align: center;
+  }
+  .we{
+    color: #9999998c;
+    text-align: center;
+    margin-top: 5rem;
+    border-top: 1px solid #99999965;
+    padding-top: 2rem;
+  }
+
+  .about-fave{
+    height: fit-content;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+
+  }
+  .about-fave .heading{
+    font-size: 3rem;
+    text-transform:uppercase;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: -1rem;
+    text-align: center;
+    color: #555;
+  }
+  .about-fave .heading span{
+    color: rgb(43, 181, 8);
+  }
+  .me{
+    display: flex;
+    padding-inline: 7%;
+    margin-top: 4rem;
+  }
+  .me img{
+    margin-right: 5rem;
+  }
+  .me .all-text h3{
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #999;
+  }
+
+  .me .all-text p{
+    line-height: 2;
+    font-size: 1.4rem;
+    margin-block: 3rem;
+  }
+  .me .all-text button{
+    background-color:rgb(105, 175, 0);
+    border-radius: 20px;
+    transition: 1s;
+  }
+  .me .all-text button:hover{
+    color: black;
+    background-color: white; 
+    border: 1px solid black; 
+  }
+  .about-anime{
+    position: relative;
+    padding-block: 5rem;
+    padding-inline: 3rem;
+    border-top: 1px solid #5555553f;
+    height: fit-content;
+  }
+  .anime, .whytxt{
+    width: 100%;
+    padding-inline: 1rem;
+    display: flex;
+  }
+  .anime span, .whytxt span,.anime h6, .whytxt h6 {
+    color: teal;
+  }
+  .anime h6, .whytxt h6{
+    font-size: 2.3;
+  }
+  .anime img, .whytxt img{
+    scale:0.85;
+  } 
+  .anime{
+    margin-top: 2rem;
+   }
+  .whytxt{
+    margin-top: 5rem;
+  }
+  .anime .text, .whytxt .text{
+    font-size: 1.5rem;
+    color: black;
+    width: 30%;
+    margin-top: 5rem;
+    line-height: 2;
+  }
+  .anime .text h5, .whytxt .text h5{
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: -1rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  .about-anime h5::after{
+    content:'';
+    background-color: rgba(255, 0, 0, 0.49);
+    height: 3px;
+    width: 6rem;
+    left:-5rem;
+    bottom: 2rem;
+    transition: 0.5s;
+    position: absolute;
+    border-radius: 20px;
+  }
+  .box{
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid rgba(255, 0, 0, 0.49);
+    position: absolute;
+  }
+  
+  .footer{
+    background-color: black;
+    color: white;
+    padding-inline:20rem;
+    padding-top: 12rem;
+    height: 70vh;
+    position: relative;
+  }
+  .footer h4{
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: -1rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    position: relative; 
+  }
+  .footer p{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  .footer span{
+    margin-inline: 1rem;
+  }
+  .footer a{
+    position: absolute;
+    bottom: 2rem;
+    right: 35%;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+  }
+  .footer .logo{
+  margin-left: 45%; 
+  margin-top:-7%; 
+  position: absolute;
+  }
+  .footer .logo .img{
+    filter: grayscale(100);
+    scale: 4;
+    margin-right: 3rem;
+  }
